@@ -22,11 +22,17 @@
 11. get the password from "/var/lib/jenkins/secrets/initialAdminPassword"
 12. select install suggested plugins
 13. fill the form -> start jenkins
-14. install docker -sudo spt install docker.io
+14. install docker -sudo apt install docker.io
 15. grant access to ubuntu and jenkins
     sudo su - 
     usermod -aG docker jenkins
     usermod -aG docker ubuntu
     systemctl restart docker
 16. switch user as jenkins
-17. 
+17. got to jenkin on web browser
+18. dashboard ->manage jenkins ->plugins -> available plugins
+19. search for docker pipeline and install
+20. restart jenkins on browser
+21. new item -> enter project name ->pipeline
+22. change defination to pipeline scripts from scm
+23. add the git repo "https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/python-jenkins-argocd-k8s/Jenkinsfile"
