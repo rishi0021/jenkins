@@ -28,11 +28,12 @@ sudo apt-get install jenkins
     usermod -aG docker jenkins
     usermod -aG docker ubuntu
     systemctl restart docker
-16. switch user as jenkins
-17. got to jenkin on web browser
-18. dashboard ->manage jenkins ->plugins -> available plugins
-19. search for docker pipeline and install
-20. restart jenkins on browser
-21. new item -> enter project name ->pipeline
-22. change defination to pipeline scripts from scm
-23. add the git repo "https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/python-jenkins-argocd-k8s/Jenkinsfile"
+16. type a command to check if docker is creating contaninner "docker run hello-world"    
+17. switch user as jenkins
+18. got to jenkin on web browser
+19. dashboard ->manage jenkins ->plugins -> available plugins
+20. search for docker pipeline and install
+21. restart jenkins on browser
+22. new item -> enter project name ->pipeline
+23. change defination to pipeline scripts from scm
+24. add the git repo "https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/python-jenkins-argocd-k8s/Jenkinsfile"
